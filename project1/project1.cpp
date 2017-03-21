@@ -179,13 +179,13 @@ double evaluateExpression(const string& exp, unordered_map<string, double>& m) {
 
 			//var has full variable name (Letters and numbers included in it
 			//Move i to past the =
-			while (i < (int)exp.length() && exp[i] == '=') {
+			while (i < (int)exp.length() && exp[i] != '=') {
 				i++;
 			}
 			i++; //Go 1 past the =
 
 			//Assuming it found the = before ending, evaluate everything past it
-			string sub = exp.substr(i+1, (int)exp.length() - (i+1));
+			string sub = exp.substr(i, (int)exp.length() - i);
 			double value = evaluateExpression(sub, m);
 
 			_silent = false; //You may speak now

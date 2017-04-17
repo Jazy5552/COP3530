@@ -10,14 +10,12 @@
 using namespace std; //savage
 
 //TODO Would be nice if you made some prototypes you heathen
-//na
 
 //-----------------------------------------------------------------
 //----------------------TRIE STUFF---------------------------------
 //-----------------------------------------------------------------
 
 //**Reason for not makeing a class like a normal c++ programmer**
-//              **cuz i felt like it**
 
 //TrieNode struct (Should prob make this a class)
 //Will be used to store suffixes

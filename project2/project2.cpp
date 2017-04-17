@@ -5,7 +5,7 @@
 #define CHAR_TO_INDEX(c) ((int)c - (int)'a')
 #define ALPHABET_SIZE (26)
 
-#define debug true //Set to true for more information
+#define debug false //Set to true for more information
 
 using namespace std; //savage
 
@@ -271,6 +271,7 @@ int main() {
 	for (int i=0; i<(int)finalComb.size(); i++) {
 		cout << finalComb[i] << " ";
 	}
+	cout << endl;
 
 	return 0;
 }
